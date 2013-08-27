@@ -49,7 +49,8 @@ mothur – the mothur software (http://www.mothur.org/) used to calculated dista
 
 Other issues
 
-Types of inputs to COMPASS 
+Types of inputs to COMPASS
+
 COMPASS receives two inputs – a database and the set of reads. This package already contains the Greengenes database used in the paper. As for the reads – these can originate from two different sources – either simulated reads or from an experimental source, i.e. fasta files. These two options are described below.
 
 Simulated reads - Reads can be simulated using the file  "createReads_package.m", that appears as part of the introductory examples.
@@ -59,6 +60,7 @@ Experimental reads – Reads should be prepared in a specific way for COMPASS. F
 
 
 Computing weighted specificity and weighted sensitivity
+
 The file "example_evaluating_simulation_results.m" presents an example of calculating weighted specificity and sensitivity for a specific simulation, as used in Figure 3 and Figure 4 in the manuscript.
 
 
