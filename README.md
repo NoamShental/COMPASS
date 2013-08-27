@@ -21,6 +21,7 @@ If a Mac/Windows version is needed, please contact shental@openu.ac.il
 How to start? Introductory files
 
 We included 3 introductory files. Please follow these examples to better understand how to apply COMPASS.
+
 1.	Example of a single simulation: An example of running a specific simulation - from creating the reads to applying COMPASS. See file:  "example_of_a_single_simulation.m". We recommend following this example first, section by section.
 
 2.	Example of simulations similar to those performed to produce Figure 3 in the manuscript: namely varying the number of reads, read length and number of bacteria – See file: "example_simulations.m"
@@ -32,6 +33,7 @@ We included 3 introductory files. Please follow these examples to better underst
 Directories in the COMPASS package:
 
 mFiles – Matlab files and mex files.
+
 results – A directory used to save simulation results for the examples. Note that we have already saved several example results that appear in the introductory examples.
 
 database – the Greengenes database used in a COMPASS format. Two databases are provided – the full 16S rRNA gene database and the database of 750bp long sequences covering variable regions V3-V6 (see manuscript)
