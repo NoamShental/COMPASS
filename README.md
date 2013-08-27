@@ -8,10 +8,8 @@ The repository includes source code, executables and example datasets, and can b
 
 Installation: 
 Download the COMPASS directory from https://github.com/NoamShental/COMPASS
-(use the "Download ZIP" button on the right hand side of the page)
+Use the "Download ZIP" button on the right hand side of the page. It's about 300M, which are mostly database. Once done, uncompress it, and follow the introductory files listed below.
 
-
-Follow the introductory files listed below.
 You will have to change the path variable to your COMPASS location. For example, if COMPASS was saved under your home directory then enter the following in each introductory file:
 userDir = '~/COMPASS/'; 
 
