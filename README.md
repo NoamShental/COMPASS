@@ -7,7 +7,9 @@ The COMPASS repository contains programs for reconstruction of microbial species
 The repository includes source code, executables and example datasets, and can be used for microbial profiling of experimental and simulated reads, for simulating reads, and for evaluating profiling results.
 
 Installation: 
-Download the COMPASS directory from https://github.com/NoamShental/COMPASS 
+Download the COMPASS directory from https://github.com/NoamShental/COMPASS
+(use the "Download ZIP" button on the right hand side of the page)
+
 
 Follow the introductory files listed below.
 You will have to change the path variable to your COMPASS location. For example, if COMPASS was saved under your home directory then enter the following in each introductory file:
