@@ -20,7 +20,7 @@ If a Mac/Windows version is needed, please contact shental@openu.ac.il
 
 How to start? Introductory files
 
-We included 3 introductory files. Please follow these examples to better understand how to apply COMPASS.
+We included 3 introductory files. These are located in the directory "mFiles". Please follow these examples to better understand how to apply COMPASS.
 
 1.	Example of a single simulation: An example of running a specific simulation - from creating the reads to applying COMPASS. See file:  "example_of_a_single_simulation.m". We recommend following this example first, section by section.
 
