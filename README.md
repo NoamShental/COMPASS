@@ -38,7 +38,8 @@ database – the Greengenes database used in a COMPASS format. Two databases are
 
 experimentalReads –  example files for larva sample L2. Other experimental data presented in the paper are available at the MG-RAST website: http://metagenomics.anl.gov/linkin.cgi?project=5237
 
-cvx – the optimization software used, downloaded from the CVX website (http://cvxr.com/cvx/) 
+cvx – the optimization software used, downloaded from the CVX website (http://cvxr.com/cvx/)
+
 mothur – the mothur software (http://www.mothur.org/) used to calculated distances between correct and reconstructed bacteria.
 
 
