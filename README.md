@@ -14,7 +14,7 @@ You will have to change the path variable to your COMPASS location. For example,
 userDir = '~/COMPASS/'; 
 
 Requirements:
-The package is written in Matlab and uses mex files which are currently only compiled for Linux 64bit. 
+The package is written in Matlab and uses mex files which are currently only compiled for Linux 64bit. The software requires Matlab's Parallel Computing Toolbox. 
 If a Mac/Windows version is needed, please contact shental@openu.ac.il
 
 
