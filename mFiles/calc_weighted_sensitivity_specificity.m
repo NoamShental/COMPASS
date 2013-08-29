@@ -58,9 +58,25 @@ disp('starting mothur');
 %keyboard
 
 PWD = pwd;
+
+if ~isdir([userDir,'results/tmpDir'])
+  if isunix | ismac
+    w = ['! mkdir ',userDir,'results/tmpDir'];
+    eval(w)
+  elseif ispc
+    w = ['! mkdir ',userDir,'results\tmpDir'];
+    eval(w)
+  end
+end
+
+
 cd([userDir,'results/tmpDir']);
 
 if isunix
+
+  w = ['!chmod 0700 ',userDir,'mothur/Linux64/mothur/mothur'];
+  eval(w)
+
   w = ['!',userDir,'mothur/Linux64/mothur/mothur "#align.seqs(candidate=',...
      fileName,'.fa'...
      ', template=',userDir,'mothur/core_set_aligned.fasta.imputed); dist.seqs(fasta=',...
