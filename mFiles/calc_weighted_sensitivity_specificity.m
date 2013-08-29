@@ -24,6 +24,15 @@ tmpInd = unique([correct_mixture_indices,COMPASS_indices]);
 
 %%%%%%%%%%%%%%%%%%5
 % write temporary fasta file of these sequences to be applied by mothur
+if ~isdir([userDir,'results/tmpDir'])
+  if isunix | ismac
+    w = ['! mkdir ',userDir,'results/tmpDir'];
+    eval(w)
+  elseif ispc
+    w = ['! mkdir ',userDir,'results\tmpDir'];
+    eval(w)
+  end
+end
 
 % load the Sequences for the current block
 load(setParameters.basicSeqKey,'positionInPart','len_uni')
@@ -58,18 +67,6 @@ disp('starting mothur');
 %keyboard
 
 PWD = pwd;
-
-if ~isdir([userDir,'results/tmpDir'])
-  if isunix | ismac
-    w = ['! mkdir ',userDir,'results/tmpDir'];
-    eval(w)
-  elseif ispc
-    w = ['! mkdir ',userDir,'results\tmpDir'];
-    eval(w)
-  end
-end
-
-
 cd([userDir,'results/tmpDir']);
 
 if isunix
