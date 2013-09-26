@@ -76,6 +76,6 @@ Support for any questions or comments, please contact:
 
 Noam Shental: shental@openu.ac.il
 
-Or Zuk: orzuk@ttic.edu
+Or Zuk: or.zuk@mail.huji.ac.il
 
 
