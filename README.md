@@ -1,13 +1,15 @@
 COMPASS software package
 ========================
 
-Convex Optimization for Microbial Profiling by Aggregating Short Sequence reads
+COMPASS: Convex Optimization for Microbial Profiling by Aggregating Short Sequence reads
 
 The COMPASS repository contains programs for reconstruction of microbial species identities and frequencies from massively parallel sequencing short-reads data.
 
 The repository includes source code, executables and example datasets, and can be used for microbial profiling of experimental and simulated reads, for simulating reads, and for evaluating profiling results.
 
 Installation: 
+-------------
+
 Download the COMPASS directory from https://github.com/NoamShental/COMPASS
 Use the "Download ZIP" button on the right hand side of the page. It's about 300M, which are mostly database. Once done, uncompress it, and follow the introductory files listed below.
 
@@ -69,6 +71,8 @@ The file "example_evaluating_simulation_results.m" presents an example of calcul
 
 
 Acknowledgment
+--------------
+
 COMPASS was developed by: Noam Shental, Or Zuk, Amnon Amir and Amit Zeisel, as part of work on the papers,
 
 [1] “High Resolution Microbial Community Reconstruction by Integrating Short Reads from Multiple 16S rRNA Regions“ A. Amir, A. Zeisel, O. Zuk, M. Elgart, S. Stern, O. Shamir, P.J. Turnbaugh, Y. Soen and N. Shental (submitted).
@@ -76,7 +80,8 @@ COMPASS was developed by: Noam Shental, Or Zuk, Amnon Amir and Amit Zeisel, as p
 [2] ["Accurate Profiling of Microbial Communities from Massively Parallel Sequencing using Convex Optimization"](http://arxiv.org/abs/1309.6919), O. Zuk, A. Amir, A. Zeisel, O. Shamir and N. Shental ([SPIRE13](http://u.cs.biu.ac.il/~porately/spire2013/)).
 
 Please cite the above papers if using the package.
-Support for any questions or comments, please contact:
+
+For support, any questions or comments, please contact:
 
 Noam Shental: shental@openu.ac.il
 
