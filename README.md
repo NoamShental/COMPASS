@@ -1,7 +1,7 @@
 COMPASS software package
 ========================
 
-COMPASS: Convex Optimization for Microbial Profiling by Aggregating Short Sequence reads
+**COMPASS: Convex Optimization for Microbial Profiling by Aggregating Short Sequence reads**
 
 The COMPASS repository contains programs for reconstruction of microbial species identities and frequencies from massively parallel sequencing short-reads data.
 
@@ -37,17 +37,19 @@ We included 3 introductory files. These are located in the directory "mFiles". P
 Directories in the COMPASS package:
 -----------------------------------
 
-mFiles – Matlab files and mex files.
+**mFiles** – Matlab files and mex files.
 
-results – A directory used to save simulation results for the examples. Note that we have already saved several example results that appear in the introductory examples.
+**bin** - Compiled executibles (t.b.d.)
 
-database – the Greengenes database used in a COMPASS format. Two databases are provided – the full 16S rRNA gene database and the database of 750bp long sequences covering variable regions V3-V6 (see manuscript)
+**results** – A directory used to save simulation results for the examples. Note that we have already saved several example results that appear in the introductory examples.
 
-experimentalReads –  example files for larva sample L2. Other experimental data presented in the paper are available at the MG-RAST website: http://metagenomics.anl.gov/linkin.cgi?project=5237
+**database** – the Greengenes database used in a COMPASS format. Two databases are provided – the full 16S rRNA gene database and the database of 750bp long sequences covering variable regions V3-V6 (see manuscript)
 
-cvx – the optimization software used, downloaded from the CVX website (http://cvxr.com/cvx/)
+**experimentalReads** –  example files for larva sample L2. Other experimental data presented in the paper are available at the MG-RAST website: http://metagenomics.anl.gov/linkin.cgi?project=5237
 
-mothur – the mothur software (http://www.mothur.org/) used to calculated distances between correct and reconstructed bacteria.
+**cvx** – the optimization software used, downloaded from the CVX website (http://cvxr.com/cvx/)
+
+**mothur** – the mothur software (http://www.mothur.org/) used to calculated distances between correct and reconstructed bacteria.
 
 
 
@@ -55,7 +57,7 @@ mothur – the mothur software (http://www.mothur.org/) used to calculated dista
 Other issues
 ------------
 
-Types of inputs to COMPASS
+**Types of inputs to COMPASS**
 
 COMPASS receives two inputs – a database and the set of reads. This package already contains the Greengenes database used in the paper. As for the reads – these can originate from two different sources – either simulated reads or from an experimental source, i.e. fasta files. These two options are described below.
 
@@ -65,7 +67,7 @@ Experimental reads – Reads should be prepared in a specific way for COMPASS. F
 
 
 
-Computing weighted specificity and weighted sensitivity
+**Computing weighted specificity and weighted sensitivity**
 
 The file "example_evaluating_simulation_results.m" presents an example of calculating weighted specificity and sensitivity for a specific simulation, as used in Figure 3 and Figure 4 in the manuscript.
 
