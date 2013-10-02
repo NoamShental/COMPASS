@@ -1,4 +1,5 @@
 COMPASS software package
+========================
 
 Convex Optimization for Microbial Profiling by Aggregating Short Sequence reads
 
@@ -14,6 +15,7 @@ You will have to change the path variable to your COMPASS location. For example,
 userDir = '~/COMPASS/'; 
 
 Requirements:
+-------------
 The package is written in Matlab and uses mex files which are currently only compiled for Linux 64bit. The software requires Matlab's Parallel Computing Toolbox. 
 If a Mac/Windows version is needed, please contact shental@openu.ac.il
 
@@ -31,6 +33,7 @@ We included 3 introductory files. These are located in the directory "mFiles". P
 
 
 Directories in the COMPASS package:
+-----------------------------------
 
 mFiles – Matlab files and mex files.
 
@@ -48,6 +51,7 @@ mothur – the mothur software (http://www.mothur.org/) used to calculated dista
 
 
 Other issues
+------------
 
 Types of inputs to COMPASS
 
