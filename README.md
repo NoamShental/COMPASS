@@ -69,7 +69,7 @@ COMPASS was developed by: Noam Shental, Or Zuk, Amnon Amir and Amit Zeisel, as p
 
 [1] “High Resolution Microbial Community Reconstruction by Integrating Short Reads from Multiple 16S rRNA Regions“ A. Amir, A. Zeisel, O. Zuk, M. Elgart, S. Stern, O. Shamir, P.J. Turnbaugh, Y. Soen and N. Shental (submitted).
 
-[2] “Accurate Profiling of Microbial Communities from Massively Parallel Sequencing using Convex Optimization”, O. Zuk, A. Amir, A. Zeisel, O. Shamir and N. Shental (SPIRE13).
+[2] ["Accurate Profiling of Microbial Communities from Massively Parallel Sequencing using Convex Optimization"](http://arxiv.org/abs/1309.6919), O. Zuk, A. Amir, A. Zeisel, O. Shamir and N. Shental ([SPIRE13](http://u.cs.biu.ac.il/~porately/spire2013/)).
 
 Please cite the above papers if using the package.
 Support for any questions or comments, please contact:
