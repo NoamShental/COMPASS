@@ -1,0 +1,27 @@
+% parameters to create a specific mixture and its reads.
+
+
+%%%%%%%%%%%%%%%%%%%%
+% edit the following part according to the required simulation parameters, namely the number of reads, the number of bacteria in the mixture and their distribution.
+
+auxDataIn = struct;
+auxDataIn.numBacteriaInDatabase = 410849;% this is fixed - the number of sequences in the Greengenes database used. In this case we use the full 16S database
+auxDataIn.numberOfBacteriaInMix = 200; % number of bacteria in the mixture
+auxDataIn.powerLaw = 1; % distribution of 1/(x^powerLaw);
+auxDataIn.readLength = 100; % the read length
+auxDataIn.Nreads = 10^6; % number of reads
+auxDataIn.addNoiseFlag = 1; % 1 for adding read errors according to the read error model. 0 for ignoring noise.
+%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%
+% read errors model
+% the read errror model for Illumina reads - see Supplementary method of the manuscript
+ErrorStruct = []; ErrorStruct.error_model = 'exponential';
+ErrorStruct.baseline_error = 0.005; 
+ErrorStruct.final_error = 0.03; 
+p_one_nuc_error_mat = [ -1   0.3  0.22  0.18; 0.5    -1  0.22   0.6;  0.35  0.15    -1  0.22;0.15  0.55  0.56   -1]; 
+ErrorStruct.p_one_nuc_error_mat = p_one_nuc_error_mat;
+% end defining error model (this part was kept fixed in our simulations)
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
