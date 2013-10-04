@@ -16,8 +16,10 @@ Installation instructions:
 --------------------------
 
 The only installation refers to the MCR. Please do the following:
+
 1) cd userDir/COMPASS/COMPASS_compiled/bin
 where "userDir" is where the location of the COMPASS package. For example, in case COMPASS was saved under your home directory, then "userDir" is simply "~".
+
 2) cat MCR_2012a.tgz_* | tar xz
 
 
