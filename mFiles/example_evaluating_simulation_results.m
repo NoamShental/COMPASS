@@ -36,6 +36,7 @@ correct_mixture_freq = res.correctWeight_numOfReads{i}(correct_mixture_indices);
 COMPASS_indices = find(res.solution_numOfReads{i}>setParameters.minimal_relevant_freq);
 COMPASS_freq = res.solution_numOfReads{i}(COMPASS_indices);
 
+% the following function uses mothur. On Linux/MAC you may need to do "chmod 077 mothur" to run. Locate the mothur under: "mothur/MAC64/mothur" or "mothur/Linux64/mothur". This is done once.
 [weightedSensitivity,weightedSpecificity,SequenceSimilarityThresholds]=calc_weighted_sensitivity_specificity(correct_mixture_indices,correct_mixture_freq,COMPASS_indices,COMPASS_freq,userDir,setParameters);
 
 figure(1);clf
