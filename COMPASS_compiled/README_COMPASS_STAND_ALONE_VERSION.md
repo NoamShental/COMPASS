@@ -29,5 +29,6 @@ Example:
 We provide an example of a single simulation, namely creating the reads and applying COMPASS. Please follow the file "example_of_a_single_simulation_COMPASS_compiled.txt"
 
 For questions please write Noam Shental
+
 shental@openu.ac.il
 
