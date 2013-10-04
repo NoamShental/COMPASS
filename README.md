@@ -11,7 +11,7 @@ Installation:
 -------------
 
 Download the COMPASS directory from https://github.com/NoamShental/COMPASS
-Use the "Download ZIP" button on the right hand side of the page. It's about 300M, which are mostly database. Once done, uncompress it, and follow the introductory files listed below.
+Use the "Download ZIP" button on the right hand side of the page. It's about 600M, which are mostly database (and MCR files for the compiled version). Once done, uncompress it, and follow the introductory files listed below.
 
 You will have to change the path variable to your COMPASS location. For example, if COMPASS was saved under your home directory then enter the following in each introductory file:
 userDir = '~/COMPASS/'; 
@@ -21,6 +21,7 @@ Requirements:
 The package is written in Matlab and uses mex files which are currently only compiled for Linux 64bit. The software requires Matlab's Parallel Computing Toolbox. 
 If a Mac/Windows version is needed, please contact shental@openu.ac.il
 
+We also included a stand-alone version for Linux 64bit, for those who do not have access to Matlab. The package appears in a directory "COMPASS_compiled". Please see the README file inside the diretcory for a description. This README file describes the Matlab version.
 
 How to start? Introductory files
 
@@ -39,7 +40,7 @@ Directories in the COMPASS package:
 
 **mFiles** – Matlab files and mex files.
 
-**bin** - Compiled executibles (t.b.d.)
+**COMPASS_compiled** - A directory in itself that contains a stand alone version of COMPASS for Linux64 bit.
 
 **results** – A directory used to save simulation results for the examples. Note that we have already saved several example results that appear in the introductory examples.
 
