@@ -51,8 +51,8 @@ create_sim_data.exe $MCR_PATH   $userDir_COMPASS_compiled/simulations_input_para
 
 ####################
 # step 3)
-# setting COMPASS general parameters and specific parameters 
-# Please look at the file: "COMPASS_parameters.txt" in the directory "COMPASS_parameter_files".
+# setting COMPASS general parameters and specific parameters for the reconstruction algorithm.
+# Please look and modify the file: "COMPASS_parameters.txt" in the directory "COMPASS_parameter_files".
 
 # end step 3
 ####################
@@ -60,7 +60,7 @@ create_sim_data.exe $MCR_PATH   $userDir_COMPASS_compiled/simulations_input_para
 
 ###################
 # step 4)
-# run COMPASS. 
+# run COMPASS reconstruction algorithm.  
 
 run_COMPASS.exe   $MCR_PATH $userDir_COMPASS $userDir_COMPASS_compiled/simulations_data/simData_numBact_200_numReads_10e6_powerLaw_1 $userDir_COMPASS_compiled/COMPASS_results/COMPASS_solution_simData_numBact_200_numReads_10e6_powerLaw_1.asc $userDir_COMPASS_compiled/COMPASS_parameter_files/COMPASS_parameters.txt 
 
@@ -100,7 +100,7 @@ create_results_fasta.exe $MCR_PATH $userDir_COMPASS_compiled/simulations_data/si
 
 # end step 5a
 
-# step 5b: create fasta file of the COMPASS' results:
+# step 5b: create fasta file of COMPASS' reconstrucion results:
 
 create_results_fasta.exe  $MCR_PATH $userDir_COMPASS_compiled/COMPASS_results/COMPASS_solution_simData_numBact_200_numReads_10e6_powerLaw_1.asc solution 0.001 $userDir_COMPASS_compiled/COMPASS_results/Sequence_Header_COMPASS_solution_simData_numBact_200_numReads_10e6_powerLaw_1.fasta $userDir_COMPASS $userDir_COMPASS_compiled/COMPASS_parameter_files/COMPASS_parameters.txt
 
