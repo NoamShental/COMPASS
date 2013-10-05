@@ -11,7 +11,7 @@ setParameters.basicSeqKey= [userDir,'database/full16S/datNoNonACGT/keyNoNonACGT'
 setParameters.readLength = 100;
 
 % CPU related parameter
-setParameters.numProcessors = 6; % number of cores **THIS VALUE IS IRRELEVANT** THE COMPILED VERSION USES ALL CORE. WE WILL CHANGE THAT IN A FUTURE VERSIONS
+setParameters.numProcessors = 6; % number of cores **THIS VALUE IS IRRELEVANT** THE COMPILED VERSION USES ALL CORES. WE WILL CHANGE THAT IN A FUTURE VERSIONS
 
 % COMPASS specific parameters 
 setParameters.thresholdForCollectingBAC = 1e-3; % COMPASS threshold for 'interesting' bacteria. 
@@ -21,7 +21,7 @@ setParameters.smallestSetOfCollected = 1000;% after collecting the bacteria from
 setParameters.repeatRandomGroups = 10; % see the following comment
 setParameters.upperLimitForRepeat = 150000; % when the number of bacteria left in the divide and conquer step is lower than 150000 (value given by setParameters.upperLimitForRepeat), then  COMPASS iterates dividive and conquer 10 (value given by setParameters.repeatRandomGroups) times.
 
-setParameters.repeatWhenLowerThanThisValue = 20000; % when the number of bacteria left in the dividive and conquer step is lower than 20000 (value given by setParameters.repeatWhenLowerThanThisValue),  then  COMPASS iterates dividive and conquer 2*10 (twice the value given by setParameters.repeatRandomGroups) times.
+setParameters.repeatWhenLowerThanThisValue = 20000; % when the number of bacteria left in the divide-and-conquer step is lower than 20000 (value given by setParameters.repeatWhenLowerThanThisValue),  then  COMPASS iterates dividive and conquer 2*10 (twice the value given by setParameters.repeatRandomGroups) times.
 
 % end setting parameters
 %%%%%%
