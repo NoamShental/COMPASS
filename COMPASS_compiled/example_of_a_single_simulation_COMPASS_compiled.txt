@@ -46,8 +46,13 @@ create_sim_data.exe $MCR_PATH   $userDir_COMPASS_compiled/simulations_input_para
 # $userDir_COMPASS_compiled/simulations_data/simData_numBact_200_numReads_10e6_powerLaw_1: output file name. The file contains the correct mixture and the reads. Note that the output file is a Matlab .mat file. 
 # $userDir_COMPASS: The (Matlab-based) COMPASS directory name.
 
+# By now the file "simData_numBact_200_numReads_10e6_powerLaw_1.mat"
+# was created. The file contains the reads and the correct
+# mixtures. Note that this is a Matlab file. 
+
 # end step 2
 ####################
+
 
 ####################
 # step 3)
@@ -70,8 +75,16 @@ run_COMPASS.exe   $MCR_PATH $userDir_COMPASS $userDir_COMPASS_compiled/simulatio
 # $MCR_PATH: a Matlab-required input. No need to modify   
 # $userDir_COMPASS: The (Matlab-based) COMPASS directory name.
 # $userDir_COMPASS_compiled/simulations_data/simData_numBact_200_numReads_10e6_powerLaw_1: Full path to the reads' file. 
-# $userDir_COMPASS_compiled/COMPASS_results/COMPASS_solution_simData_numBact_200_numReads_10e6_powerLaw_1.asc: Results are written to this file. The output of COMPASS is written to a file in ascii. More specifically, the output is a vector whose length is the number of bacteria in the database, that holds the reconstructed frequency of each bacteria. 
+# $userDir_COMPASS_compiled/COMPASS_results/COMPASS_solution_simData_numBact_200_numReads_10e6_powerLaw_1.asc:
+# Results are written to this file. See below. 
 # $userDir_COMPASS_compiled/COMPASS_parameter_files/COMPASS_parameters.txt: The COMPASS parameters' file
+
+# By now the file "COMPASS_solution_simData_numBact_200_numReads_10e6_powerLaw_1.asc"
+# was created holding the COMPASS results.  
+# The output of COMPASS is written to a file in ascii. 
+# More specifically, the output is a vector whose length is the number
+# of bacteria in the database, that holds the reconstructed frequency of each bacteria. 
+
 # end step 4
 ####################
 
@@ -80,7 +93,7 @@ run_COMPASS.exe   $MCR_PATH $userDir_COMPASS $userDir_COMPASS_compiled/simulatio
 # step 5)
 # examine the COMPASS results. 
 # The following program creates a fasta file holding the bacteria names, sequences and frequencies. 
-# The program is run over the simulated mixture and over the COMPASS results file. 
+# The program is run twice - once over the simulated mixture and then over the COMPASS results file. 
 # The user can then compare the two files. 
 #
 # step 5a: create fasta file of the simulated mixture:
@@ -99,10 +112,9 @@ create_results_fasta.exe $MCR_PATH $userDir_COMPASS_compiled/simulations_data/si
 # $userDir_COMPASS_compiled/COMPASS_parameter_files/COMPASS_parameters.txt: The COMPASS parameters' file.
 
 # After running this step, the output file: 
-# $userDir_COMPASS_compiled/COMPASS_results/Sequence_Header_COMPASS_solution_simData_numBact_200_numReads_10e6_powerLaw_1.fasta
-# should contain a fasta results file with reconstruction results (reconstructed frequency and identity 
-# of all bacteria with reconstructed frequency above the threshold)
-
+# Sequence_Header_simData_numBact_200_numReads_10e6_powerLaw_1.fasta
+# should contain a fasta results file with the correct mixture (reconstructed frequency and identity 
+# of all bacteria)
 
 # end step 5a
 
@@ -120,7 +132,11 @@ create_results_fasta.exe  $MCR_PATH $userDir_COMPASS_compiled/COMPASS_results/CO
 # $userDir_COMPASS: The (Matlab-based) COMPASS directory name. 
 # $userDir_COMPASS_compiled/COMPASS_parameter_files/COMPASS_parameters.txt: The COMPASS parameters' file.
 
-# After running this step, we should see a metric of the reconstrion results. 
+# After running this step, the output file:
+# Sequence_Header_COMPASS_solution_simData_numBact_200_numReads_10e6_powerLaw_1.fasta
+# should contain a fasta results file with the COMPASS results (reconstructed frequency and identity 
+# of all bacteria with reconstructed frequency above the threshold 0.001)
+
 
 # end step 5b
 # end step 5
