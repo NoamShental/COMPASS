@@ -3,13 +3,17 @@
 % uniqueReads - list of unique reads packed as 64bit words
 % uniqueReads_length - the number of times each read appears
 % varargout is uniqueReads_inds - the original indices each unique read
-
-function [uniqueReads,uniqueReads_length,varargout]=createUniqueReadsAndPack(reads,readLength)
+%
+% TEMP! added debug printings 
+% 
+function [uniqueReads,uniqueReads_length,packed_seqs, varargout]=createUniqueReadsAndPack(reads,readLength)
 
 % check is reads are char array - pack them to 64bit words
 if ischar(reads)
+  reads_are_char = 999
   [packed_seqs, seqs_len] = pack_seqs(reads, 64);
 else % already packed
+  reads_are_ints = 11
   packed_seqs = reads;
 end
 
