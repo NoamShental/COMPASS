@@ -42,8 +42,11 @@ create_sim_data.exe $MCR_PATH   $userDir_COMPASS_compiled/simulations_input_para
 
 # explaining the programs' input arguments:
 # $MCR_PATH: a Matlab-required input. No need to modify  
-# $userDir_COMPASS_compiled/simulations_input_parameters_files/simData_numBact_200_numReads_10e6_powerLaw_1.txt: full path to the simulation parameters' file 
-# $userDir_COMPASS_compiled/simulations_data/simData_numBact_200_numReads_10e6_powerLaw_1: output file name. The file contains the correct mixture and the reads. Note that the output file is a Matlab .mat file. 
+# $userDir_COMPASS_compiled/simulations_input_parameters_files/simData_numBact_200_numReads_10e6_powerLaw_1.txt: 
+# full path to the simulation parameters' file 
+# $userDir_COMPASS_compiled/simulations_data/simData_numBact_200_numReads_10e6_powerLaw_1:
+# output file name. 
+# The file contains the correct mixture and the reads. Note that the output file is a Matlab .mat file. 
 # $userDir_COMPASS: The (Matlab-based) COMPASS directory name.
 
 # By now the file "simData_numBact_200_numReads_10e6_powerLaw_1.mat"
@@ -128,7 +131,8 @@ create_results_fasta.exe  $MCR_PATH $userDir_COMPASS_compiled/COMPASS_results/CO
 # Name of file to be analyzed 
 # solution: The variable name. Any name would be ok in this case.
 # 0.001: The threshold value. All bacteria whose frequency is larger than this value are considered.
-# $userDir_COMPASS_compiled/COMPASS_results/Sequence_Header_COMPASS_solution_simData_numBact_200_numReads_10e6_powerLaw_1.fasta: The output name of the fasta file. 
+# $userDir_COMPASS_compiled/COMPASS_results/Sequence_Header_COMPASS_solution_simData_numBact_200_numReads_10e6_powerLaw_1.fasta:
+# The output name of the fasta file. 
 # $userDir_COMPASS: The (Matlab-based) COMPASS directory name. 
 # $userDir_COMPASS_compiled/COMPASS_parameter_files/COMPASS_parameters.txt: The COMPASS parameters' file.
 
