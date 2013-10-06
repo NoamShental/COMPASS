@@ -11,7 +11,7 @@ setParameters.basicSeqKey= [userDir,'database/full16S/datNoNonACGT/keyNoNonACGT'
 setParameters.readLength = 100;
 
 % CPU related parameter
-setParameters.numProcessors = 6; % number of cores **THIS VALUE IS IRRELEVANT** THE COMPILED VERSION USES ALL CORES. WE WILL CHANGE THAT IN A FUTURE VERSIONS
+setParameters.numProcessors = 6; % number of cores **THIS VALUE IS IRRELEVANT** THE COMPILED VERSION USES ALL CORES. WE WILL CHANGE THAT IN FUTURE VERSIONS
 
 % COMPASS specific parameters 
 setParameters.thresholdForCollectingBAC = 1e-3; % COMPASS threshold for 'interesting' bacteria. 
