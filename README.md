@@ -19,7 +19,8 @@ userDir = '~/COMPASS/';
 Requirements:
 -------------
 The package is written in Matlab and uses mex files compiled for Linux64 bit, Mac 64bit and Windows 64bit. 
-The software requires Matlab's Parallel Computing Toolbox. 
+The software requires Matlab's Parallel Computing Toolbox.
+ 
 We have extensively used COMPASS on Linux and strongly recommend using Linux, due to memory and speed issues.
 
 
