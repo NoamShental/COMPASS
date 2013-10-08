@@ -24,7 +24,7 @@ The software requires Matlab's Parallel Computing Toolbox.
 We have extensively used COMPASS on Linux and strongly recommend using Linux, due to memory and speed issues.
 
 
-We also included a stand-alone version for Linux 64bit, for those who do not have access to Matlab. The package appears in a directory "COMPASS_compiled". Please see the README file inside the diretcory for a description. This README file describes the Matlab version.
+We also included a stand-alone version for Linux 64bit, for those who do not have access to Matlab. The package appears in a directory "COMPASS_compiled". Please see the README file inside the directory for a description. This README file describes the Matlab version.
 
 How to start? Introductory files
 
@@ -34,7 +34,7 @@ We included 3 introductory files. These are located in the directory "mFiles". P
 
 2.	Example of simulations similar to those performed to produce Figure 3 in the manuscript: namely varying the number of reads, read length and number of bacteria – See file: "example_simulations.m"
 
-3.	Example of analysing the Drosophila larva sample L2 using COMPASS – See file: " example_experimental_reads_sample_L2.m "  
+3.	Example of analyzing the Drosophila larva sample L2 using COMPASS – See file: " example_experimental_reads_sample_L2.m "  
 
 
 
