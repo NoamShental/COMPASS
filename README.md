@@ -1,3 +1,5 @@
+![GitHub Logo](compass-1024x682.jpg)
+
 COMPASS software package
 ========================
 
