@@ -1,6 +1,5 @@
-![GitHub Logo](compass-small-1024x682.jpg)
 
-COMPASS software package
+COMPASS ![GitHub Logo](compass-small-1024x682.jpg)
 ========================
 
 **COMPASS: Convex Optimization for Microbial Profiling by Aggregating Short Sequence reads**
